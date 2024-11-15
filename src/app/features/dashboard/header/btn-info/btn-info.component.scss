@@ -1,0 +1,26 @@
+div{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  b{
+    font-size: 32px;
+    font-weight: 400;
+  }
+  span{
+    font-size: 13px;
+    text-transform: capitalize;
+    width: 60px;
+
+  }
+  &::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: var(--mainColor);
+    position: absolute;
+    left: -20px;
+    bottom: 5px;
+  }
+}

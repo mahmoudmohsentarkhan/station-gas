@@ -1,0 +1,11 @@
+<section>
+  <div class="value d-flex align-items-center">
+    {{data().val | number: '1.0-0'}}
+    <span>{{data().sympol}}</span>
+  </div>
+  <b>{{data().label}}</b>
+  <div class="status" [ngClass]="{'decrease': data().isDcrease}">
+    <span class="arrow"></span>
+    {{data().unit}}
+  </div>
+</section>

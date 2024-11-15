@@ -1,0 +1,37 @@
+mat-form-field{
+  font-size: 14px;
+  b{
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+}
+
+::ng-deep{
+  mat-datepicker-content{
+    margin-top: 2px !important;
+  }
+  mat-form-field{
+    mat-label,.mat-mdc-form-field-icon-suffix button{
+      color: var(--blackColor) !important;
+    }
+    .div.mat-mdc-select-panel,.mdc-text-field--filled:not(.mdc-text-field--disabled){
+      background-color: #fff;
+    }
+    .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::before{
+      display: none;
+    }
+    .mat-mdc-text-field-wrapper{
+      border-bottom: 2px solid var(--blackColor) !important;
+      padding-inline: 5px;
+
+    }
+    &.mat-focused .mat-mdc-text-field-wrapper {
+      border-color: var(--mainColor);
+
+    }
+    .mat-mdc-form-field-subscript-wrapper,.mdc-line-ripple{
+      display: none !important;
+    }
+
+  }
+}

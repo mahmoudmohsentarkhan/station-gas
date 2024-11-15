@@ -1,0 +1,49 @@
+
+
+
+section{
+  .header{
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    ul{
+      gap:25px;
+      li{
+        position: relative;
+        padding: 0 5px 10px;
+        &:first-child:hover{
+          color: var(--mainColor);
+        }
+        &:last-child:hover{
+          color: #ba1a1a;
+        }
+
+        &:nth-child(2):hover{
+          color: var(--altColor);
+        }
+        &:nth-child(3):hover{
+          color: var(#5ebcdc);
+        }
+        cursor: pointer;
+        &.sales{
+          color: var(--mainColor);
+          border-bottom : 3px solid var(--mainColor);
+        }
+        &.transaction{
+          color: var(--altColor);
+          border-bottom : 3px solid var(--altColor);
+        }
+        &.value{
+          color: #5ebcdc;
+          border-bottom : 3px solid #5ebcdc;
+        }
+        &.compression{
+          color: #ba1a1a;
+          border-bottom : 3px solid #ba1a1a;
+        }
+
+      }
+    }
+  }
+}

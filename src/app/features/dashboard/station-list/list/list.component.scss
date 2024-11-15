@@ -1,0 +1,18 @@
+section{
+  height: calc(100vh - 395px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-inline-end: 40px;
+  &::-webkit-scrollbar {
+    width: 2px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--mainColor);
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--hoverColor);
+  }
+}
+

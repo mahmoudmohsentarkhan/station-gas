@@ -1,0 +1,23 @@
+div{
+  .label{
+    text-transform: capitalize;
+  }
+  .progress{
+    height: 6px;
+    width: 100%;
+    background-color: var(--bg);
+    border-radius: 5px;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    &::before{
+      content: '';
+      height: 100%;
+      width: var(--value);
+      background-color: var(--mainColor);
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}

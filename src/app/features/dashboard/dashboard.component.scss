@@ -1,0 +1,11 @@
+section{
+  padding-inline: 45px 30px;
+  height: 100vh;
+  padding-bottom: 20px;
+  .test{
+    overflow: hidden !important;
+  }
+}
+:host{
+  flex: 1;
+}

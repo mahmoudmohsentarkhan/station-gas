@@ -1,0 +1,11 @@
+<section>
+  @if(true){
+    @for (item of [].constructor(4); track $index) {
+      <div>
+        <card-station/>
+      </div>
+    }
+  }@else{
+    <p>No Stations</p>
+  }
+</section>

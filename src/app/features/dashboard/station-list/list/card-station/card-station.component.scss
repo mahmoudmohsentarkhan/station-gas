@@ -1,0 +1,48 @@
+section{
+  .head{
+    border-bottom:1px solid #E0E7F1;
+    .name{
+      .dot{
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        background-color: var(--mainColor);
+        display: inline-block;
+        margin: 0 5px 5px 0;
+      }
+      b{
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        width: 150px;
+        display: inline-block;
+        margin-inline-start: 15px;
+        position: relative;
+        top: 10px;
+
+      }
+
+    }
+  }
+
+  .info{
+    margin-top: 25px;
+    text-transform: capitalize;
+    li{
+      font-size: 12px;
+      margin-bottom: 15px;
+      .label{
+        margin-right: 25px;
+
+      }
+      .value{
+        font-weight: 500;
+        text-transform: none;
+      }
+      &.hidden{
+        display: none;
+      }
+    }
+  }
+}
+

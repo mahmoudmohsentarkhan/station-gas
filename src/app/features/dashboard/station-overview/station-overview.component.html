@@ -1,0 +1,7 @@
+<section class="row g-4">
+  @for (data of dataList; track $index) {
+    <statistic-card class="col-3" [data]="data" [ngClass]="{'active': $first}" />
+  }@empty {
+    <p>no there data</p>
+  }
+</section>

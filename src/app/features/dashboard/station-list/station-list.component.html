@@ -1,0 +1,15 @@
+<section>
+  <ul class="d-flex justify-content-end">
+    <li class="d-flex align-items-center" (click)="showList()" [ngClass]="{'active': !toggle()}">
+      <mat-icon fontIcon="draw" class="me-2"></mat-icon>
+      graph
+    </li>
+    <li class="d-flex align-items-center" (click)="showGraph()" [ngClass]="{'active': toggle()}">
+      <mat-icon fontIcon="more_vert" class="me-2"></mat-icon>
+      list
+    </li>
+  </ul>
+  <div>
+    <ng-container *ngComponentOutlet="currentCompnent"></ng-container>
+  </div>
+</section>

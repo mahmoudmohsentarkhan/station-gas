@@ -1,0 +1,16 @@
+<section>
+  <mat-icon fontIcon="more_horiz" (click)="showProperties = !showProperties"/>
+  @if (showProperties) {
+    <div class="properties">
+      <span>view properties:</span>
+      <ul class="row">
+        @for (property of properties; track property; let i = $index) {
+          <li class="col-6">
+            <mat-checkbox disableRipple="true" [checked]="property.selected" (change)="select(property.id)"/>
+            {{property.label}}
+          </li>
+        }
+      </ul>
+    </div>
+  }
+</section>

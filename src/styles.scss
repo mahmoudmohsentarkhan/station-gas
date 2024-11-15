@@ -1,0 +1,37 @@
+@use '@angular/material' as mat;
+@include mat.core();
+@import "bootstrap/dist/css/bootstrap-grid.min.css";
+@import 'normalize.css';
+
+$my-border-radius: 4px;
+$task-theme: mat.define-theme((
+  color: (
+    theme-type: light,
+    primary: mat.$orange-palette,
+  ),
+  density: (
+    scale: -1,
+  )
+));
+
+:root {
+  @include mat.all-component-themes($task-theme);
+  --mainColor:#FF7F5C;
+  --altColor:#00CBC0;
+  --hoverColor:#F4DBD4;
+  --blackColor: #3D5161;
+  --bodyColor: #BCC0CD;
+  box-sizing: content-box;
+}
+
+
+html, body { color: var(--blackColor);}
+body { margin: 0; font-family: Roboto, Regular ,"Helvetica Neue", sans-serif; }
+ul{
+  padding: 0;
+  list-style: none;
+}
+*
+{
+  box-sizing: border-box;
+}

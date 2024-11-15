@@ -1,0 +1,20 @@
+<section>
+  <div class="head d-flex align-items-center justify-content-between">
+    <div class="name">
+      <span class="dot"></span>
+      <img src="icons/gas-station-2.png" alt="gas-station" width="53" height="43">
+      <b>station name dummy</b>
+    </div>
+    <sation-filter (filter)="filter($event)"/>
+  </div>
+  <ul class="info row g-2">
+    @for (propery of properties; track $index) {
+      <li  class="col-4" [ngClass]="{'hidden': !filters.includes(propery.id)}" >
+        <b class="label">{{propery.label}}</b>
+        <span class="value">
+          {{propery.value}}
+        </span>
+      </li>
+    }
+  </ul>
+</section>

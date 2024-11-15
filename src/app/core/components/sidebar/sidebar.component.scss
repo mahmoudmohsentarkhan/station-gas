@@ -1,0 +1,21 @@
+aside{
+  width: 115px;
+  height: 100vh;
+  background-color: var(--mainColor);
+  border-radius: 0px 30px 30px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-block: 25px;
+
+  div{
+    display: flex;
+    justify-content: center;
+  }
+  ul{
+    text-align: center;
+    li:not(:last-child){
+      margin-block-end: 15px;
+    }
+  }
+}

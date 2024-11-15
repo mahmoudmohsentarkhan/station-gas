@@ -1,0 +1,14 @@
+section{
+  .title{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  ul{
+    padding-inline: 50px;
+    li:not(:last-child){
+      margin-bottom: 30px;
+    }
+  }
+}

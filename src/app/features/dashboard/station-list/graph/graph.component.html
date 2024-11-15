@@ -1,0 +1,26 @@
+<section>
+  <div class="header d-flex justify-content-between align-items-center">
+    <div class="title">station activates overlew</div>
+    <ul class="d-flex">
+      <li [ngClass]="{'sales': currentDate =='sales'}" (click)="salesData()">sales</li>
+      <li [ngClass]="{'transaction': currentDate =='transaction'}" (click)="transactionData()">transaction</li>
+      <li [ngClass]="{'value': currentDate =='value'}" (click)="valueData()">value</li>
+      <li [ngClass]="{'compression': currentDate =='compression'}" (click)="compressionData()">compression</li>
+    </ul>
+  </div>
+
+  <div class="chart">
+    <apx-chart
+    [series]="chartOptions.series"
+    [chart]="chartOptions.chart"
+    [dataLabels]="chartOptions.dataLabels"
+    [plotOptions]="chartOptions.plotOptions"
+    [colors]="chartOptions.colors"
+    [legend]="chartOptions.legend"
+    [fill]="chartOptions.fill"
+    [stroke]="chartOptions.stroke"
+    [tooltip]="chartOptions.tooltip"
+    [xaxis]="chartOptions.xaxis"
+  ></apx-chart>
+  </div>
+</section>

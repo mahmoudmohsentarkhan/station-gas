@@ -1,0 +1,13 @@
+
+  <mat-form-field>
+    <mat-label><b>{{label()}}</b> data - time</mat-label>
+    <input
+      matInput
+      [matDatepicker]="publishSchedule"
+    />
+    <mat-datepicker-toggle
+      matIconSuffix
+      [for]="publishSchedule"
+    ></mat-datepicker-toggle>
+    <mat-datepicker #publishSchedule xPosition="end"></mat-datepicker>
+  </mat-form-field>

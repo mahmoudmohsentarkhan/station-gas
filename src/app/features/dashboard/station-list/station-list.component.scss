@@ -1,0 +1,22 @@
+section{
+  ul{
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    li{
+      cursor: pointer;
+      padding: 10px 45px;
+      border-radius: 25px;
+      &.active{
+        background-color: var(--mainColor);
+        color: #fff;
+      }
+      &:not(.active):hover{
+        color: var(--mainColor);
+
+      }
+    }
+   }
+}
